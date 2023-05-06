@@ -21,7 +21,7 @@ def setup_logging(config):
 def get_input_and_output_dirs(config):
     # Set input and output directories
     input_dir = config.get('PDFS', 'import_directory', fallback='pdfs')
-    output_dir = config.get('PDFS', 'output_directory', fallback='exports')
+    output_dir = config.get('PDFS', 'export_directory', fallback='exports')
     return input_dir, output_dir
 
 def get_pdf_files(input_dir):
